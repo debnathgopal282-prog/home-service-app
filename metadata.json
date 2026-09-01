@@ -1,0 +1,6 @@
+{
+  "name": "Fast & Smart Solution - Home Services & Repair",
+  "description": "সমগ্র পশ্চিমবঙ্গের নির্ভরযোগ্য ডোরস্টেপ হোম সার্ভিস ও রিপেয়ার প্ল্যাটফর্ম ফাস্ট অ্যান্ড স্মার্ট সলিউশন (Fast & Smart Solution) - বৈদ্যুতিক মেরামত, প্লাম্বিং, এসি-ফ্রিজ, হোম এপ্লায়েন্স ও দ্রুত ঘরোয়া সমাধান।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

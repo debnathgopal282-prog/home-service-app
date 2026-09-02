@@ -12,7 +12,7 @@ export default function BookingModal({ isOpen, onClose, initialService }: Bookin
   const [specificService, setSpecificService] = useState('এসি ফোম ওয়াশ ও হাই-প্রেসার সার্ভিস');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
-  const [district, setDistrict] = useState('শিলিগুড়ি ও উত্তরবঙ্গ (দার্জিলিং, জলপাইগুড়ি, কোচবিহার)');
+  const [district, setDistrict] = useState('দক্ষিণ ২৪ পরগণা');
   const [address, setAddress] = useState('');
   const [details, setDetails] = useState('');
   const [date, setDate] = useState('আজকে (Today)');
@@ -61,11 +61,11 @@ export default function BookingModal({ isOpen, onClose, initialService }: Bookin
           throw new Error(data.message || 'বুকিং জমা দেওয়া সম্ভব হয়নি।');
         }
       } else {
-        // ব্যাকএন্ড API না থাকলে ক্লায়েন্ট সাইডেই সাকসেস মেসেজ দেখাবে
+        // ব্যাকএন্ড API না থাকলে সরাসরি সফল দেখাবে
         setIsSuccess(true);
       }
     } catch (err: any) {
-      // Vercel Serverless Function না থাকলেও ফর্ম যেন আটকে না থাকে
+      // Vercel Serverless Function না থাকলেও ফর্ম আটকে থাকবে না
       setIsSuccess(true);
     } finally {
       setIsLoading(false);
